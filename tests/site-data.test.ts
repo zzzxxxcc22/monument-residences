@@ -25,4 +25,10 @@ describe("siteData", () => {
     expect(kitchenItem?.image).toBe("/images/kitchen.webp");
     expect(kitchenItem?.alt).toMatch(/кухн/i);
   });
+
+  it("uses a high-detail source for the living room gallery image", () => {
+    const livingRoomItem = siteData.gallery.find((item) => item.label === "Гостиная");
+
+    expect(livingRoomItem?.image).toBe("/images/interior-main.png");
+  });
 });

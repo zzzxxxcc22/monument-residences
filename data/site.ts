@@ -81,7 +81,7 @@ export const siteData: SiteData = {
   }),
   gallery: [
     {
-      image: "/images/interior-main.webp",
+      image: "/images/interior-main.png",
       label: "Гостиная",
       alt: "Панорамная гостиная резиденции MONUMENT",
     },
