@@ -91,9 +91,9 @@ export const siteData: SiteData = {
       alt: "Мастер-спальня в тёплых природных оттенках",
     },
     {
-      image: "/images/residence-3.webp",
-      label: "Столовая",
-      alt: "Столовая с видом на вечернюю Москву",
+      image: "/images/kitchen.webp",
+      label: "Кухня",
+      alt: "Кухня с островом, мягкой подсветкой и видом на вечерний город",
     },
   ],
   amenities: [

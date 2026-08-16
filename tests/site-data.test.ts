@@ -15,4 +15,14 @@ describe("siteData", () => {
       expect(residence.image).toMatch(/^\/images\//);
     }
   });
+
+  it("uses a dedicated kitchen item in the interior gallery", () => {
+    const galleryLabels = siteData.gallery.map((item) => item.label);
+    const kitchenItem = siteData.gallery.find((item) => item.label === "Кухня");
+
+    expect(galleryLabels).toContain("Кухня");
+    expect(galleryLabels).not.toContain("Столовая");
+    expect(kitchenItem?.image).toBe("/images/kitchen.webp");
+    expect(kitchenItem?.alt).toMatch(/кухн/i);
+  });
 });
