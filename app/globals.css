@@ -54,5 +54,9 @@ img { max-width: 100%; }
 .button, .textLink { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; gap: 22px; padding: 0 22px; border: 1px solid var(--line-strong); color: var(--paper); font-size: 11px; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; transition: border-color 300ms var(--ease), background 300ms var(--ease), color 300ms var(--ease), transform 300ms var(--ease); }
 .button:hover, .textLink:hover { border-color: var(--bronze-light); background: var(--bronze); color: white; transform: translateY(-2px); }
 .buttonSolid { border-color: var(--bronze); background: linear-gradient(120deg, #8f6e47, #b18a59); }
+@supports (animation-timeline: view()) {
+  main > section:not(:first-child) { animation: sectionReveal both; animation-timeline: view(); animation-range: entry 4% cover 24%; }
+  @keyframes sectionReveal { from { opacity: .34; transform: translateY(42px); } to { opacity: 1; transform: translateY(0); } }
+}
 @media (max-width: 760px) { :root { --container: min(100% - 36px, 1400px); } .eyebrow { margin-bottom: 18px; } .displayTitle { font-size: clamp(48px, 14vw, 72px); } .sectionTitle { font-size: clamp(38px, 11.5vw, 58px); } }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } main > section:not(:first-child) { opacity: 1; transform: none; animation: none !important; } *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; } }

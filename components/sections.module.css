@@ -2,6 +2,7 @@
 .header { display: grid; align-items: end; margin-bottom: clamp(46px, 7vw, 86px); grid-template-columns: minmax(0,1fr) minmax(280px,420px); gap: 60px; }
 .intro { margin: 0; color: var(--paper-soft); font-size: 15px; line-height: 1.8; }
 .split { display: grid; min-height: 720px; grid-template-columns: 1.08fr .92fr; border: 1px solid var(--line); }
+.split > *, .locationGrid > *, .leadGrid > * { min-width: 0; }
 .splitReverse { grid-template-columns: .8fr 1.2fr; }
 .media { position: relative; min-height: 640px; overflow: hidden; }
 .media img { object-fit: cover; transition: transform 900ms var(--ease); }
@@ -56,5 +57,5 @@
 .submit { justify-self: start; border: 0; cursor: pointer; }
 .error { color: #d9a57d; font-size: 11px; }
 .status { min-height: 24px; margin: 0; color: var(--bronze-light); font-family: var(--display); font-size: 21px; }
-@media (max-width: 900px) { .header { grid-template-columns: 1fr; gap: 24px; } .split, .splitReverse, .planCard, .locationGrid, .leadGrid { grid-template-columns: 1fr; } .split .media { order: 1; } .split .body { order: 2; } .media, .planImage, .map { min-height: 520px; } .leadGrid { gap: 60px; } }
-@media (max-width: 600px) { .section { padding-block: 84px; } .header { margin-bottom: 38px; } .split { min-height: 0; } .media, .planImage, .map { min-height: 380px; } .body { padding: 30px 22px; } .facts, .amenities { grid-template-columns: 1fr; } .fact:nth-child(odd), .amenity { padding-right: 0; border-right: 0; } .fact:nth-child(even) { padding-left: 0; } .constructionOverlay { right: 14px; bottom: 14px; left: 14px; } .times { grid-template-columns: 1fr; } .times div { padding-bottom: 16px; border-bottom: 1px solid var(--line); } }
+@media (max-width: 900px) { .header { grid-template-columns: minmax(0,1fr); gap: 24px; } .split, .splitReverse, .planCard, .locationGrid, .leadGrid { grid-template-columns: minmax(0,1fr); } .split .media { order: 1; } .split .body { order: 2; } .media, .planImage, .map { min-height: 520px; } .leadGrid { gap: 60px; } }
+@media (max-width: 600px) { .section { padding-block: 84px; } .header { margin-bottom: 38px; } .split { min-height: 0; } .media, .planImage, .map { min-height: 380px; } .body { padding: 30px 22px; } .body h2, .body h3 { font-size: 36px; overflow-wrap: anywhere; } .locationBody { padding: 30px 22px; } .locationBody h2 { font-size: 40px; overflow-wrap: anywhere; } .leadCopy h2 { font-size: 46px; overflow-wrap: anywhere; } .facts, .amenities { grid-template-columns: 1fr; } .fact:nth-child(odd), .amenity { padding-right: 0; border-right: 0; } .fact:nth-child(even) { padding-left: 0; } .constructionOverlay { right: 14px; bottom: 14px; left: 14px; } .times { grid-template-columns: 1fr; } .times div { padding-bottom: 16px; border-bottom: 1px solid var(--line); } }

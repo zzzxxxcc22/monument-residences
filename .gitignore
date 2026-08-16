@@ -8,3 +8,6 @@ test-results/
 coverage/
 *.tsbuildinfo
 work/
+.playwright-cli/
+output/
+outputs/
