@@ -1,0 +1,12 @@
+.selector { display: grid; min-height: 680px; margin-top: clamp(70px,9vw,130px); grid-template-columns: .75fr 1.25fr 74px; border: 1px solid var(--line); }
+.copy { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: clamp(32px,5vw,74px); background: var(--ink-soft); }
+.copy h3 { margin: 0; font-family: var(--display); font-size: clamp(62px,7vw,104px); font-weight: 400; line-height: 1; }
+.copy p { max-width: 280px; margin: 22px 0 34px; color: var(--paper-soft); line-height: 1.7; }
+.building { position: relative; overflow: hidden; }
+.building img { object-fit: cover; object-position: 70% center; }
+.floors { display: flex; flex-direction: column; justify-content: space-around; padding: 18px 0; background: #151614; }
+.floors button { display: grid; min-height: 28px; place-items: center; padding: 0; border: 0; border-left: 1px solid transparent; background: transparent; color: var(--muted); font-size: 10px; cursor: pointer; }
+.floors button:hover { color: var(--paper); }
+.floors .activeFloor { border-left-color: var(--bronze-light); background: rgba(164,129,85,.18); color: var(--paper); }
+@media (max-width:1100px) { .selector { grid-template-columns: 1fr 1fr 60px; } }
+@media (max-width:760px) { .selector { min-height: 720px; grid-template-columns: 1fr 54px; } .copy { grid-column: 1/-1; min-height: 300px; } .building { min-height: 420px; } }

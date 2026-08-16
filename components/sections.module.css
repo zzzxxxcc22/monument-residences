@@ -54,5 +54,7 @@
 .consent { display: flex; align-items: flex-start; gap: 12px; color: var(--muted); font-size: 12px; }
 .consent input { width: 18px; height: 18px; accent-color: var(--bronze); }
 .submit { justify-self: start; border: 0; cursor: pointer; }
+.error { color: #d9a57d; font-size: 11px; }
+.status { min-height: 24px; margin: 0; color: var(--bronze-light); font-family: var(--display); font-size: 21px; }
 @media (max-width: 900px) { .header { grid-template-columns: 1fr; gap: 24px; } .split, .splitReverse, .planCard, .locationGrid, .leadGrid { grid-template-columns: 1fr; } .split .media { order: 1; } .split .body { order: 2; } .media, .planImage, .map { min-height: 520px; } .leadGrid { gap: 60px; } }
 @media (max-width: 600px) { .section { padding-block: 84px; } .header { margin-bottom: 38px; } .split { min-height: 0; } .media, .planImage, .map { min-height: 380px; } .body { padding: 30px 22px; } .facts, .amenities { grid-template-columns: 1fr; } .fact:nth-child(odd), .amenity { padding-right: 0; border-right: 0; } .fact:nth-child(even) { padding-left: 0; } .constructionOverlay { right: 14px; bottom: 14px; left: 14px; } .times { grid-template-columns: 1fr; } .times div { padding-bottom: 16px; border-bottom: 1px solid var(--line); } }
