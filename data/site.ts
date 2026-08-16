@@ -38,7 +38,7 @@ export const siteData: SiteData = {
       rooms: "1 спальня",
       area: 54,
       price: 24900000,
-      image: "/images/residence-1.webp",
+      image: "/images/interior-main.png",
       accent: "Панорамная гостиная",
     },
     {

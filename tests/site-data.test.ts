@@ -31,4 +31,12 @@ describe("siteData", () => {
 
     expect(livingRoomItem?.image).toBe("/images/interior-main.png");
   });
+
+  it("uses the same high-detail living room source wherever that photo appears", () => {
+    const livingRoomResidence = siteData.residences.find(
+      (residence) => residence.accent === "Панорамная гостиная",
+    );
+
+    expect(livingRoomResidence?.image).toBe("/images/interior-main.png");
+  });
 });
