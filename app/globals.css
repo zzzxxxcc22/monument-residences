@@ -1,0 +1,20 @@
+:root {
+  color-scheme: dark;
+  --ink: #111210;
+  --paper: #f3eee4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: Arial, Helvetica, sans-serif;
+}
