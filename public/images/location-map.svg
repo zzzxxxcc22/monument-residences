@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" role="img" aria-labelledby="title desc">
+  <title id="title">Карта расположения MONUMENT</title>
+  <desc id="desc">Условная карта Хамовников с отметкой дома рядом с Москвой-рекой</desc>
+  <rect width="1000" height="700" fill="#171816"/>
+  <g fill="none" stroke="#30312e" stroke-width="14" opacity=".9">
+    <path d="M-40 120L1040 610M40 690L820-20M-60 540L740-40M260 730L1060 120"/>
+    <path d="M-40 310L1040 220M100 760L910-50" stroke-width="7"/>
+  </g>
+  <path d="M-40 590C180 480 328 520 512 610S820 714 1040 586" fill="none" stroke="#27343c" stroke-width="56" opacity=".75"/>
+  <g transform="translate(603 278)">
+    <path d="M0-70c-43 0-78 35-78 78 0 58 78 132 78 132S78 66 78 8C78-35 43-70 0-70z" fill="#9d7b50"/>
+    <circle cy="8" r="32" fill="#171816" stroke="#e9e1d4" stroke-width="5"/>
+    <circle cy="8" r="10" fill="#e9e1d4"/>
+  </g>
+  <g fill="#918d84" font-family="Arial, sans-serif" font-size="18" letter-spacing="3">
+    <text x="640" y="470">ХАМО́ВНИКИ</text><text x="640" y="500">МОСКВА</text>
+  </g>
+</svg>

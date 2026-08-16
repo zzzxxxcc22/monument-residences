@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 680" role="img" aria-labelledby="title desc">
+  <title id="title">Планировка гранд-резиденции</title>
+  <desc id="desc">Схема квартиры с тремя спальнями, кухней-гостиной и двумя ванными комнатами</desc>
+  <rect width="900" height="680" fill="#ece8df"/>
+  <g fill="none" stroke="#3f403d" stroke-width="9" stroke-linecap="square">
+    <path d="M94 74h712v528H94z"/>
+    <path d="M94 354h252M346 74v528M346 242h202M548 74v344M548 418h258M650 418v184"/>
+    <path d="M94 190h252M548 242h258"/>
+  </g>
+  <g fill="none" stroke="#9c8260" stroke-width="4">
+    <path d="M346 292a54 54 0 0 0-54-54"/><path d="M548 310a54 54 0 0 1 54-54"/>
+    <path d="M650 500a54 54 0 0 1-54-54"/><path d="M260 354a54 54 0 0 0 54 54"/>
+  </g>
+  <g fill="#64635f" font-family="Arial, sans-serif" font-size="17" letter-spacing="2">
+    <text x="142" y="140">СПАЛЬНЯ</text><text x="142" y="285">КАБИНЕТ</text>
+    <text x="402" y="164">ХОЛЛ</text><text x="590" y="164">МАСТЕР-СПАЛЬНЯ</text>
+    <text x="410" y="485">КУХНЯ-ГОСТИНАЯ</text><text x="692" y="520">ВАННАЯ</text>
+  </g>
+</svg>
