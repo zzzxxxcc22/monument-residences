@@ -1,0 +1,8 @@
+.footer { padding: 72px 0 34px; border-top: 1px solid var(--line); background: #0d0e0c; }
+.inner { display: grid; width: var(--container); margin-inline: auto; grid-template-columns: 1.3fr .8fr .8fr; gap: 50px; }
+.brand { font-family: var(--display); font-size: 32px; }
+.inner p { color: var(--muted); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
+.inner nav, .contact { display: grid; align-content: start; gap: 12px; }
+.inner nav a, .contact a { color: var(--paper-soft); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; }
+.copy { grid-column: 1/-1; margin: 48px 0 0; padding-top: 22px; border-top: 1px solid var(--line); }
+@media (max-width:700px) { .inner { grid-template-columns: 1fr; gap: 30px; } .copy { margin-top: 20px; } }

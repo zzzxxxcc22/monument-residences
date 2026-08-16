@@ -1,0 +1,15 @@
+.hero { position: relative; min-height: max(760px, 100svh); overflow: hidden; background: #142033; }
+.image { object-fit: cover; object-position: center; animation: heroScale 1.8s var(--ease) both; }
+.scrim { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(7,11,17,.76) 0%, rgba(7,11,17,.28) 49%, rgba(7,11,17,.18) 100%), linear-gradient(0deg, rgba(6,8,10,.78), transparent 45%); }
+.content { position: relative; z-index: 2; padding-top: clamp(170px, 20vh, 230px); }
+.title { max-width: 700px; text-shadow: 0 2px 28px rgba(0,0,0,.22); }
+.lead { max-width: 500px; margin: 30px 0 34px; color: rgba(255,255,255,.7); font-size: 15px; line-height: 1.7; }
+.stats { position: absolute; z-index: 2; bottom: 0; left: 0; display: grid; width: min(66%, 980px); grid-template-columns: repeat(4, 1fr); border-top: 1px solid rgba(255,255,255,.18); background: rgba(10,12,13,.35); backdrop-filter: blur(10px); }
+.stats div { display: grid; min-height: 110px; align-content: center; padding: 20px clamp(18px, 3vw, 42px); border-right: 1px solid rgba(255,255,255,.14); }
+.stats strong { font-family: var(--display); font-size: clamp(21px, 2vw, 29px); font-weight: 400; text-transform: uppercase; }
+.stats span { margin-top: 7px; color: rgba(255,255,255,.55); font-size: 9px; letter-spacing: .1em; text-transform: uppercase; }
+.scroll { position: absolute; z-index: 2; right: 6vw; bottom: 42px; display: flex; align-items: center; gap: 18px; font-size: 9px; letter-spacing: .12em; text-transform: uppercase; }
+.scroll span { width: 1px; height: 42px; background: rgba(255,255,255,.55); }
+@keyframes heroScale { from { opacity: 0; transform: scale(1.04); } to { opacity: 1; transform: scale(1); } }
+@media (max-width: 900px) { .stats { width: 100%; } .scroll { display: none; } }
+@media (max-width: 620px) { .hero { min-height: 780px; } .content { padding-top: 154px; } .lead { max-width: 32ch; margin-block: 24px 28px; font-size: 14px; } .stats { grid-template-columns: repeat(2, 1fr); } .stats div { min-height: 74px; padding: 12px 18px; } .stats strong { font-size: 20px; } }
